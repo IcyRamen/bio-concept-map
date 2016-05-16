@@ -41,6 +41,17 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+	color: #ffffff;
+	display: block;
+	font-size: 36px;
+	font-weight: normal;
+	line-height: 100%;
+	margin: 0;
+	position: relative;
+	text-align: center;
+}
+
 h4.main-subheading {
 	color: #ffffff;
 	display: block;
@@ -60,7 +71,7 @@ h4.main-subheading {
 
 .sidebar {
 	background-color: #1c1c1c;
-	position: fixed;
+	position: absolute;
 	right: 0;
 	top: 1px;
 	width: 16.6666%;
@@ -69,8 +80,8 @@ h4.main-subheading {
 
 .sidebar-grabber {
 	border: solid 1px #cccccc;
-	height: 780px;
-	line-height: 780px;
+	height: 496px;
+	line-height: 496px;
 	margin: -1px;
 	position: absolute;
 	text-align: center;
@@ -109,6 +120,11 @@ a {
 
 .sidebar-link {
 	color: #cccccc;
+	word-wrap: break-word;
+}
+
+#sidebar-1 {
+	border-bottom: solid 1px #ff5050;
 }
 
 #sidebar-2 {
@@ -120,6 +136,18 @@ a {
 }
 
 #sidebar-4 {
+	border-bottom: solid 1px #ff6600;
+}
+
+#sidebar-5 {
+	border-bottom: solid 1px #993366;
+}
+
+#sidebar-6 {
+	border-bottom: solid 1px #ffcc00;
+}
+
+#sidebar-7 {
 	border-bottom: solid 1px #cccccc;
 	margin-bottom: -1px;
 }
