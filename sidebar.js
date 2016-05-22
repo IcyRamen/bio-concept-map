@@ -69,7 +69,7 @@ $(document).ready(function() {
 		} else {
 			$(".sidebar").animate({right: '-' + ($(".sidebar-item").width() + 7) + 'px'});
 		}
-        document.getElementsByTagName("body")[0].style[ "font-size" ] = document.body.clientWidth*(14/1366) + "px";
+        document.getElementsByTagName("body")[0].style[ "font-size" ] = document.body.clientWidth*(16/1366) + "px";
         document.getElementsByTagName("h1")[0].style[ "font-size" ] = document.body.clientWidth*(48/1366) + "px";
         document.getElementsByTagName("h2")[0].style[ "font-size" ] = document.body.clientWidth*(36/1366) + "px";
         document.getElementsByTagName("h3")[0].style[ "font-size" ] = document.body.clientWidth*(24/1366) + "px";
