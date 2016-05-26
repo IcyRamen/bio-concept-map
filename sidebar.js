@@ -2,15 +2,8 @@ $(document).ready(function() {
 	sidebarOut = true;
 	retract = true;
 	done = false;
-    firstResize = false;
-    if (firstResize = false) {
-        document.getElementsByTagName("body")[0].style[ "font-size" ] = document.body.clientWidth*(16/1366) + "px";
-        document.getElementsByTagName("h1")[0].style[ "font-size" ] = document.body.clientWidth*(48/1366) + "px";
-        document.getElementsByTagName("h2")[0].style[ "font-size" ] = document.body.clientWidth*(36/1366) + "px";
-        document.getElementsByTagName("h3")[0].style[ "font-size" ] = document.body.clientWidth*(24/1366) + "px";
-        document.getElementsByTagName("h4")[0].style[ "font-size" ] = document.body.clientWidth*(20/1366) + "px";
-        firstResize = true;
-    }
+	$(".sidebar-grabber").css("line-height", String($(".sidebar-grabber").height()) + 'px');
+	$(".sidebar-item").css("line-height", String($(".sidebar-item").height()) + 'px');
 	$(".sidebar").hover(function() {
 		retract = false;
 		$(".sidebar").mouseleave(function() {
@@ -61,15 +54,12 @@ $(document).ready(function() {
 		}
 	});
 	$(window).resize(function() {
+		$(".sidebar-grabber").css("line-height", String($(".sidebar-grabber").height()) + 'px');
+		$(".sidebar-item").css("line-height", String($(".sidebar-item").height()) + 'px');
 		if (sidebarOut) {
 			$(".sidebar").animate({right: '0'});
 		} else {
 			$(".sidebar").animate({right: '-' + ($(".sidebar-item").width() + 7) + 'px'});
 		}
-        document.getElementsByTagName("body")[0].style[ "font-size" ] = document.body.clientWidth*(16/1366) + "px";
-        document.getElementsByTagName("h1")[0].style[ "font-size" ] = document.body.clientWidth*(48/1366) + "px";
-        document.getElementsByTagName("h2")[0].style[ "font-size" ] = document.body.clientWidth*(36/1366) + "px";
-        document.getElementsByTagName("h3")[0].style[ "font-size" ] = document.body.clientWidth*(24/1366) + "px";
-        document.getElementsByTagName("h4")[0].style[ "font-size" ] = document.body.clientWidth*(20/1366) + "px";
 	});
 });
